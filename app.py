@@ -26,7 +26,7 @@ st.markdown("""
 # --- Top-of-page instructions image (root folder) ---
 BANNER_PATH = Path("instructions.png")
 if BANNER_PATH.exists():
-    st.image(str(BANNER_PATH), use_column_width=True)
+    st.image(str(BANNER_PATH), use_container_width=True)
 else:
     st.warning("instructions.png not found in the app root. Add it to show instructions at the top.")
 
