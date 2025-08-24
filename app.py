@@ -17,11 +17,7 @@ from pdfminer.high_level import extract_text  # pdfminer.six
 st.set_page_config(page_title="UC Berkeley Class List → .ics", page_icon="📅", layout="centered")
 
 # tighten top padding so the banner sits close to the top
-st.markdown("""
-<style>
-    .block-container { padding-top: 1rem; }
-</style>
-""", unsafe_allow_html=True)
+st.markdown("<div style='height:24px'></div>", unsafe_allow_html=True)
 
 # --- Top-of-page instructions image (root folder) ---
 BANNER_PATH = Path("instructions.png")
